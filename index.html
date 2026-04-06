@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Copilot Dev Days | Bremen</title>
+    <meta name="description" content="Landing page layout for GitHub Copilot Dev Days in Bremen." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="#">GitHub Copilot Dev Days | Bremen</a>
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#about">About</a>
+                <a href="#sessions">Sessions & Talks</a>
+                <a href="#workshops">Workshops</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#venue">Venue</a>
+                <a href="#call-for-contributors">Volunteer</a>
+                <a href="#register" class="btn btn-small nav-register">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-copy reveal delay-1">
+                <p class="kicker">GitHub Copilot Dev Days | Bremen</p>
+                <h1>
+                    Build Faster.
+                    <span>Ship Smarter.</span>
+                </h1>
+                <p class="lead">
+                    [Replace this with your event headline and key value proposition for the
+                    Dev Days audience.]
+                </p>
+                <div class="hero-actions">
+                    <a href="#register" class="btn">Claim Your Spot</a>
+                    <a href="#about" class="btn btn-ghost">Explore Program</a>
+                </div>
+                <ul class="quick-meta" aria-label="Event Highlights">
+                    <li>2026-03-30</li>
+                    <li class="meta-link-item">
+                        <a class="quick-meta-link" href="#venue" aria-label="Jump to venue details">Venue: Schuppen 1,
+                            Bremen</a>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="hero-panel reveal delay-2" aria-label="Code Preview Card">
+                <div class="panel-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre><code>// bootcamp.config.ts
+export const bootcamp = {
+  city: "Bremen",
+  audience: "Developers",
+  focus: [
+    "AI-assisted coding",
+    "team workflows",
+    "quality + speed"
+  ]
+};</code></pre>
+            </aside>
+        </section>
+
+        <section id="tracks" class="container section reveal delay-3">
+            <div class="section-head">
+                <p class="kicker">Learning Tracks</p>
+                <h2>Choose Your Focus Area</h2>
+            </div>
+            <div class="grid cards-3">
+                <article class="card card-accent">
+                    <h3>Track 1: Sessions</h3>
+                    <p>[Describe outcomes or skills covered in this track.]</p>
+                    <ul>
+                        <li>[Bullet Placeholder]</li>
+                        <li>[Bullet Placeholder]</li>
+                        <li>[Bullet Placeholder]</li>
+                    </ul>
+                </article>
+                <article class="card card-accent">
+                    <h3>Track 2: Workshops</h3>
+                    <p>[Describe outcomes or skills covered in this track.]</p>
+                    <ul>
+                        <li>[Bullet Placeholder]</li>
+                        <li>[Bullet Placeholder]</li>
+                        <li>[Bullet Placeholder]</li>
+                    </ul>
+                </article>
+                <article class="card card-accent">
+                    <h3>Track 3: Labs</h3>
+                    <p>[Describe outcomes or skills covered in this track.]</p>
+                    <ul>
+                        <li>[Bullet Placeholder]</li>
+                        <li>[Bullet Placeholder]</li>
+                        <li>[Bullet Placeholder]</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="sessions" class="container section reveal delay-2">
+            <div class="section-head">
+                <p class="kicker">Sessions and Talks</p>
+                <h2>Listen to experts</h2>
+                <p>Although we have many workshops prepared for you, these sessions will provide additional insights and
+                    learning opportunities.</p>
+            </div>
+            <div class="grid cards-3">
+                <article class="card" id="sven-session">
+                    <div class="session-card-top">
+                        <p class="session-label">Session</p>
+                        <span class="session-pill">Beginner</span>
+                    </div>
+                    <h3>Github Copilot Overview: What is this all about and what does it include?</h3>
+                    <p>his session provides a concise overview of GitHub Copilot, explaining what it is, how it works, and what capabilities it includes today. We’ll look at how Copilot supports developers across the software lifecycle—from writing and understanding code to testing and documentation—while clarifying where it adds real value and where human judgment remains essential. The goal is to demystify the tool, set realistic expectations, and give you a clear picture of how GitHub Copilot fits into modern development workflows.</p>
+                    <a href="https://www.linkedin.com/in/sven-sieverding/" class="btn btn-small session-info">Sven
+                        Sieverding</a>
+                </article>
+                  <article class="card" id="joern-session">
+                    <div class="session-card-top">
+                        <p class="session-label">Session</p>
+                        <span class="session-pill">Beginner</span>
+                    </div>
+                    <h3>Spec Driven Development</h3>
+                    <p>Spec Driven Development turns specifications into the true starting point of software development. In this session, you’ll see how clear, well-structured specs—requirements, examples, and acceptance criteria—can be used directly by GitHub Copilot to generate code, tests, and refactorings. Learn how shifting from code-first to intent-first development leads to better results, fewer misunderstandings, and more predictable software—with Copilot as a powerful implementation partner rather than just a code autocomplete.</p>
+                    <a href="https://www.linkedin.com/in/j%C3%B6rn-syrbe/" class="btn btn-small session-info">Jörn
+                        Syrbe</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="call-for-contributors" class="container section reveal delay-4">
+            <div class="call-wrap card">
+                <div>
+                    <p class="kicker">Call for Speakers/Volunteers</p>
+                    <h2>We Are still searching for Speakers and Volunteers</h2>
+                    <p>
+                        We are currently still searching for passionate Speakers and
+                        Volunteers to help shape this event in Bremen.
+                        <br />
+                        If you are interested, please contact us using the webpage linked
+                        to the right.
+                    </p>
+                </div>
+                <a href="https://example.com/call-for-speakers-volunteers" target="_blank" rel="noopener noreferrer"
+                    class="btn">Contact us</a>
+            </div>
+        </section>
+
+        <section id="workshops" class="container section reveal delay-2">
+            <div class="section-head">
+                <p class="kicker">Workshops</p>
+                <h2>Learn self-paced together with experts</h2>
+                <p>If you like learning by doing, these workshops are perfect for you. You can use them to learn at home
+                    at your own pace.<br />Or you can participate in guided sessions with experts on 30.04.2026, and
+                    learn together with other
+                    people.</p>
+                <p>Remember to bring your own laptop.</p>
+            </div>
+            <div class="grid cards-3">
+
+                <article class="card">
+                    <div class="workshop-card-top">
+                        <p class="workshop-label">Workshop</p>
+                        <span class="workshop-pill">Beginner</span>
+                    </div>
+                    <h3>Get Started with GitHub Copilot</h3>
+                    <p>Learn the basics of GitHub Copilot — code completions, chat, and inline suggestions. The perfect
+                        starting point for anyone new to AI-powered development.</p>
+                    <a href="https://github.com/skills/getting-started-with-github-copilot"
+                        class="btn btn-small workshop-info">Workshop Materials</a>
+                </article>
+                <article class="card">
+                    <div class="workshop-card-top">
+                        <p class="workshop-label">Workshop</p>
+                        <span class="workshop-pill">Beginner</span>
+                    </div>
+                    <h3>Customize Your GitHub Copilot Experience</h3>
+                    <p>Learn how to tailor GitHub Copilot to your workflow with custom instructions, prompt engineering,
+                        and personal settings for more relevant suggestions.</p>
+                    <a href="https://github.com/skills/customize-your-github-copilot-experience"
+                        class="btn btn-small workshop-info">Workshop Materials</a>
+                </article>
+                <article class="card">
+                    <div class="workshop-card-top">
+                        <p class="workshop-label">Workshop</p>
+                        <span class="workshop-pill">Beginner</span>
+                    </div>
+                    <h3>Create Apps with the Copilot CLI</h3>
+                    <p>Use GitHub Copilot in the terminal to scaffold, build, and iterate on applications. Learn how to
+                        harness Copilot CLI to speed up command-line workflows.</p>
+                    <a href="https://github.com/skills/create-applications-with-the-copilot-cli"
+                        class="btn btn-small workshop-info">Workshop Materials</a>
+                </article>
+                <article class="card" id="agent-lab">
+                    <div class="workshop-card-top">
+                        <p class="workshop-label">Workshop</p>
+                        <span class="workshop-pill">Beginner</span>
+                    </div>
+                    <h3>Agent Lab (Social Bingo)</h3>
+                    <p>Build a Social Bingo game while mastering VS Code's Agent Mode with GitHub Copilot. Learn context
+                        engineering, custom agents, and AI-first development workflows.</p>
+                    <p>This is four labs in one. You can choose to work with one of the following programming languages:
+                    <ul>
+                        <li>Python</li>
+                        <li>Typescript</li>
+                        <li>Java</li>
+                        <li>.Net</li>
+                    </ul>
+                    </p>
+                    <a href="https://copilot-dev-days.github.io/#cat-agent-lab"
+                        class="btn btn-small workshop-info">Workshop Materials</a>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="schedule" class="container section reveal delay-3">
+            <div class="section-head">
+                <p class="kicker">Event Flow</p>
+                <h2>Schedule</h2>
+                <p>We have a great lineup of sessions and workshops planned for you on the 30.04.2026.</p>
+                <p>The venue has three main spaces: neusta Space, crew Space 1, and crew Space 2. Here is the schedule
+                    for each space:</p>
+            </div>
+            <article class="shared-session card card-accent">
+                <h3>neusta Space</h3>
+                <ul class="track-slots">
+                    <li><span class="time">[13:00]</span> Opening <span class="flag flag-de" role="img"
+                            aria-label="Speaker speaks german"></span></li>
+                    <li><span class="time">[13:15]</span> Keynote <span class="flag flag-uk" role="img"
+                            aria-label="Proctor speaks english"></span></li>
+                </ul>
+            </article>
+            <div class="parallel-schedule">
+                <article class="schedule-track card card-accent">
+                    <h3>neusta Space</h3>
+                    <ul class="track-slots">
+                        <li><span class="time">[14:00]</span> <a href="#sven-session">Github Copilot Overview: What is this all about and what does it include?</a><span class="flag flag-de" role="img"
+                                aria-label="Speaker speaks german"></span></li>
+                        <li><span class="time">[15:00]</span> <a href="#joern-session">Spec Driven Development</a><span class="flag flag-de" role="img"
+                                aria-label="Speaker speaks german"></span></li>
+                        <li><span class="time">[16:00]</span> [tba]</li>
+                        <li><span class="time">[17:00]</span> [tba]</li>
+                    </ul>
+                </article>
+                <article class="schedule-track card card-accent">
+                    <h3>Crew Space 1</h3>
+                    <ul class="track-slots">
+                        <li><span class="time">[14:00]</span> <a href="#workshops">Getting Started with GitHub Copilot
+                                (90 min)</a> <span class="flag flag-de" role="img"
+                                aria-label="Proctor speaks german"></span><span class="flag flag-uk" role="img"
+                                aria-label="Proctor speaks english"></span></li>
+                        <li><span class="time">[16:00]</span> <a href="#workshops">Customize Your GitHub Copilot
+                                Experience (90 min)</a><span class="flag flag-de" role="img"
+                                aria-label="Proctor speaks german"></span><span class="flag flag-uk" role="img"
+                                aria-label="Proctor speaks english"></span></li>
+                    </ul>
+                </article>
+                <article class="schedule-track card card-accent">
+                    <h3>Crew Space 2</h3>
+                    <ul class="track-slots">
+                        <li><span class="time">[14:00]</span> <a href="#workshops">Agent App (60 min~90min)</a> <span
+                                class="flag flag-de" role="img" aria-label="Proctor speaks german"></span><span
+                                class="flag flag-uk" role="img" aria-label="Proctor speaks english"></span></li>
+                        <li><span class="time">[16:00]</span> <a href="#agent-lab">GitHub Copilot CLI Workshop
+                                (90min)</a> <span class="flag flag-de" role="img"
+                                aria-label="Proctor speaks german"></span><span class="flag flag-uk" role="img"
+                                aria-label="Proctor speaks english"></span></li>
+
+                    </ul>
+                </article>
+            </div>
+            <article class="shared-session card card-accent">
+                <h3>neusta Space</h3>
+                <ul class="track-slots">
+                    <li><span class="time">[18:00]</span> Closing</li>
+                    <li><span class="time">[18:30]</span> Networking</li>
+
+                </ul>
+            </article>
+        </section>
+
+        <section id="venue" class="container section reveal delay-4">
+            <div class="section-head">
+                <p class="kicker">Venue</p>
+                <h2>How to find us</h2>
+            </div>
+            <div class="grid venue-grid">
+                <article class="card">
+                    <p class="kicker">Venue</p>
+                    <h2>Bremen, Schuppen 1</h2>
+                    <p>You can find us at </p>
+                    <p>Schuppen 1<br />Konsul-Smidt-Straße 20<br />28217 Bremen</p>
+                    <p>Just take the main entrance and walk straight ahead into the boulevard. Don't get distracted by
+                        all the classic cars. The session spaces are on the back left side of boulevard (Search for the
+                        signs mentioning "Crew Spaces").</p>
+                    If you use <b>public transportation</b>, you can take either use
+                    <ul>
+                        <li>the tram lines 3 or 5 to the "Konsul-Smidt-Straße" stop</li>
+                        <li>bus line 26 to the "Überseetor" stop</li>
+                    </ul>
+                    and then take a 5-minute walk to the venue.
+                    <p>If you come <b>by car</b>, there are several parking options nearby, including the "BREPARKplatz
+                        Überseestadt" and street parking in the area. <br />We recommend using public transportation if
+                        possible, as parking can be limited during the event.
+                    </p>
+                </article>
+                <article class="map-card" aria-label="Map Placeholder">
+                    <div class="map-inner">
+                        <p><a href="https://www.openstreetmap.org/node/2944682550#map=18/53.090804/8.775603" alt="Schuppen
+                                1, Konsul-Smidt-Straße 20, 28217 Bremen"><img src="map.png"
+                                    alt="Map of Schuppen 1, Konsul-Smidt-Straße 20, 28217 Bremen"></a>
+
+
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="sponsors" class="container section reveal delay-4">
+            <div class="section-head">
+                <p class="kicker">Sponsors</p>
+                <h2>Supported by Great Partners</h2>
+            </div>
+            <div class="sponsor-grid">
+                <article class="card sponsor-card" aria-label="team neusta Sponsor">
+                    <div class="sponsor-logo" role="img" aria-label="team neusta logo">
+                        <img src="teamneusta.svg" alt="team neusta logo" />
+                    </div>
+                    <p>This is a free <b>community event</b>.<br /> But it would not be possible without the support of
+                        our sponsors.</p>
+                    <p>So thank you <a href="https://www.team-neusta.de/" target="_blank" rel="noopener noreferrer">team
+                            neusta</a> for your support!</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="register" class="container section register reveal delay-4">
+            <div class="section-head">
+                <p class="kicker">Register for the Dev Days</p>
+                <h2>Registration</h2>
+            </div>
+            <div class="register-wrap">
+                <div>
+                    <h2>Ready to learn more about Github Copilot and AI Development in Bremen?</h2>
+                    <p>Great! Then I hope to see you on 30.4.2026.</p>
+                    <p>It is free to attend. But please register in advance using the button on the right<br />
+                        This helps us to better plan the event and make sure we have enough space and resources for
+                        everyone.
+                    </p>
+                </div>
+                <a href="https://luma.com/2i2yyoex" class="btn">Register here</a>
+            </div>
+        </section>
+
+        <section id="other-locations" class="container section reveal delay-4">
+            <div class="other-locations card">
+                <p class="kicker">Other Locations</p>
+                <h2>Can’t attend in Bremen?</h2>
+                <p>
+                    If you cannot attend the event in Bremen, you can find another event
+                    location using the link below. This is a global event series, and there are many locations around
+                    the world where you can attend and learn
+                </p>
+                <a href="https://luma.com/githubcopilotdevdays" target="_blank" rel="noopener noreferrer"
+                    class="btn">Find Other Locations</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>[Footer text placeholder]</p>
+            <p>[Contact / Social placeholder]</p>
+        </div>
+    </footer>
+</body>
+
+</html>
