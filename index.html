@@ -5,13 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Copilot Dev Days | Bremen</title>
-    <link rel="icon" type="image/png" href="/assets/cb-345/images/site/favicon.png" data-next-head="">
+    <link rel="icon" type="image/png" href="favicon.png" data-next-head="">
     <meta name="description" content="Landing page layout for GitHub Copilot Dev Days in Bremen." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
-        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -379,6 +374,35 @@ The event is aimed at developers who are new to GitHub Copilot and AI-assisted c
             <p><a href="mailto:sven.sieverding@hec.de">Contact Us</a></p>
         </div>
     </footer>
+
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent">
+        <p class="cookie-text">
+            We use cookies to improve your experience. By continuing to use this site you accept our use of cookies.
+        </p>
+        <div class="cookie-actions">
+            <button id="cookie-accept" class="btn btn-small">Accept</button>
+            <button id="cookie-decline" class="btn btn-small btn-ghost">Decline</button>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var banner = document.getElementById('cookie-banner');
+            if (localStorage.getItem('cookieConsent')) {
+                banner.style.display = 'none';
+            }
+            document.getElementById('cookie-accept').addEventListener('click', function () {
+            console.log("cookie accepted");
+                localStorage.setItem('cookieConsent', 'accepted');
+                banner.style.display = 'none';
+            });
+            document.getElementById('cookie-decline').addEventListener('click', function () {
+                console
+                localStorage.setItem('cookieConsent', 'declined');
+                banner.style.display = 'none';
+            });
+        })();
+    </script>
 </body>
 
 </html>
