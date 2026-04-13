@@ -578,12 +578,16 @@ pre {
 
 .sponsor-grid {
   margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 1rem;
 }
 
 .sponsor-card {
   display: grid;
   gap: 0.9rem;
-  align-items: center;
+  align-items: start;
+  align-content: start;
 }
 
 .sponsor-logo {
@@ -591,7 +595,7 @@ pre {
   align-items: center;
   width: fit-content;
   max-width: 100%;
-  background: #f8fbff;
+  background: #12354a;
   border-radius: 10px;
   padding: 0.5rem 0.7rem;
 }
@@ -697,7 +701,8 @@ pre {
   .cards-3,
   .cards-2,
   .venue-grid,
-  .parallel-schedule {
+  .parallel-schedule,
+  .sponsor-grid {
     grid-template-columns: 1fr;
   }
 
